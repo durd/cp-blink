@@ -1,0 +1,9 @@
+lock database override
+set hostname fw1
+set dns suffix abc.com
+set domainname abc.com
+set dns primary 2.2.2.2
+set dns secondary 3.3.3.3
+set ntp active on
+set ntp server primary ntp.abc.com version 4
+set timezone Europe / Stockholm
