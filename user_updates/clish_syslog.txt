@@ -1,0 +1,4 @@
+lock database override
+add syslog log-remote-address 4.4.4.4 level info
+set syslog cplogs on
+set syslog mgmtauditlogs on
