@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<properties xmlVersion="1.1">
+	<installation>
+		<reboot_delay>10</reboot_delay>
+	</installation>
+	<machine_configuration>
+		<perform>true</perform>
+		<!-- <hostname>GWOBJECT_NAME_FIELD</hostname> -->
+		<password_hash>PASSWORD_HASH_FIELD</password_hash>
+		<role_configuration>
+			<gateway>
+				<!--  activation_key must be in base64 encoding -->
+				<activation_key>SIC_BASED64_FIELD</activation_key>
+				<cluster>true</cluster>
+			</gateway>
+		</role_configuration>
+		<send_data_to_usercenter>false</send_data_to_usercenter>
+		<enable_download_from_checkpoint>false</enable_download_from_checkpoint>
+	</machine_configuration>
+	<user_updates>
+		<entry_point>install_content.sh</entry_point>
+	</user_updates>
+
+	<!--
+	logging - Used in order to filter the logs saved to files, displayed on the screen or sent to the syslog.
+	Supported logging levels: DEBUG, NORMAL, ERROR, ALWAYS, NEVER
+	Colors - Should be set to true for displaying log messages in color on the screen.
+	-->
+	<logging>
+		<file_level>DEBUG</file_level>
+		<screen_level>NORMAL</screen_level>
+		<sys_log_level>NEVER</sys_log_level>
+		<colors>true</colors>
+	</logging>
+</properties>
