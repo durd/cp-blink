@@ -1,0 +1,10 @@
+* SIC/base64 encoding
+  base64
+* pw-hash (sha256)
+  cpopenssl passwd -6
+* pw-hash (md5)
+  cpopenssl passwd -1
+
+NOTES:
+* do not use newline with SIC
+* cpopenssl might not support -6 for some reason
