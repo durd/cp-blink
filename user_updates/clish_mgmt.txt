@@ -1,11 +1,4 @@
 lock database override
-set interface eth3 state on
-set interface eth3 vlan 150
-set interface eth3.150 comments "Management"
-set interface eth3.150 state on
-set interface eth3.150 ipv4-address 1.1.1.1 mask-length 28
-set interface eth3 state on
-set interface eth3 vlan 264
-set interface eth3.264 comments "L2-management"
-set interface eth3.264 state on
-set interface eth3.264 ipv4-address 2.2.2.2 mask-length 28
+set interface Mgmt state on
+set interface Mgmt comments "Management"
+set interface Mgmt ipv4-address 1.1.1.1 mask-length 28
